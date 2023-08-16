@@ -2,7 +2,7 @@ use std::{fmt::Display, ops::Deref};
 
 mod macros;
 
-#[derive(Debug, PartialEq, Eq, Hash)]
+#[derive(Debug, PartialEq, Eq, PartialOrd, Ord, Hash)]
 pub struct Id<T>(T);
 
 impl<T> Deref for Id<T> {
